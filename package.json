@@ -1,0 +1,36 @@
+{
+  "name": "mcp-diet",
+  "version": "0.1.0",
+  "description": "Measure MCP tool-schema tokens, prune unused tools, and A/B three diet plans.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zysen1/MCP-Diet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zysen1/MCP-Diet/issues"
+  },
+  "homepage": "https://github.com/zysen1/MCP-Diet#readme",
+  "scripts": {
+    "demo": "tsx src/cli.ts demo",
+    "check:docs": "tsx src/cli.ts demo && git diff --exit-code -- docs/demo-results.json docs/demo-report.html",
+    "test": "tsx --test --test-timeout 60000 tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "mcp-diet": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "^2.3.1",
+    "@modelcontextprotocol/server": "^2.3.1",
+    "gpt-tokenizer": "^3.4.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}

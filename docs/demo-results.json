@@ -1,0 +1,2281 @@
+{
+  "dataset": "kitchen-sink-90",
+  "label": "offline fixture run, no API key",
+  "tokenizer": {
+    "library": "gpt-tokenizer",
+    "encoding": "o200k_base"
+  },
+  "scan": {
+    "transport": "stdio",
+    "server": "kitchen-sink",
+    "toolCount": 90,
+    "schemaTokens": 19494,
+    "tools": [
+      {
+        "name": "admin_export_audit_log",
+        "tokens": 206
+      },
+      {
+        "name": "browser_back",
+        "tokens": 190
+      },
+      {
+        "name": "browser_click",
+        "tokens": 193
+      },
+      {
+        "name": "browser_evaluate",
+        "tokens": 195
+      },
+      {
+        "name": "browser_fill",
+        "tokens": 208
+      },
+      {
+        "name": "browser_navigate",
+        "tokens": 193
+      },
+      {
+        "name": "browser_screenshot",
+        "tokens": 191
+      },
+      {
+        "name": "browser_snapshot",
+        "tokens": 189
+      },
+      {
+        "name": "browser_wait",
+        "tokens": 194
+      },
+      {
+        "name": "calendar_create_event",
+        "tokens": 235
+      },
+      {
+        "name": "calendar_create_event_from_template",
+        "tokens": 276
+      },
+      {
+        "name": "calendar_delete_event",
+        "tokens": 191
+      },
+      {
+        "name": "calendar_find_slots",
+        "tokens": 215
+      },
+      {
+        "name": "calendar_list_events",
+        "tokens": 206
+      },
+      {
+        "name": "calendar_update_event",
+        "tokens": 215
+      },
+      {
+        "name": "crm_upsert_contact",
+        "tokens": 203
+      },
+      {
+        "name": "datadog_query_metrics",
+        "tokens": 217
+      },
+      {
+        "name": "deprecated_batch_mutate",
+        "tokens": 194
+      },
+      {
+        "name": "fs_delete",
+        "tokens": 193
+      },
+      {
+        "name": "fs_list_dir",
+        "tokens": 194
+      },
+      {
+        "name": "fs_move",
+        "tokens": 205
+      },
+      {
+        "name": "fs_read_file",
+        "tokens": 200
+      },
+      {
+        "name": "fs_read_file_archive",
+        "tokens": 276
+      },
+      {
+        "name": "fs_search",
+        "tokens": 205
+      },
+      {
+        "name": "fs_stat",
+        "tokens": 192
+      },
+      {
+        "name": "fs_write_file",
+        "tokens": 210
+      },
+      {
+        "name": "github_close_issue",
+        "tokens": 258
+      },
+      {
+        "name": "github_comment_issue",
+        "tokens": 251
+      },
+      {
+        "name": "github_create_issue",
+        "tokens": 311
+      },
+      {
+        "name": "github_create_issue_from_template",
+        "tokens": 320
+      },
+      {
+        "name": "github_create_pr",
+        "tokens": 284
+      },
+      {
+        "name": "github_list_issues",
+        "tokens": 284
+      },
+      {
+        "name": "github_list_prs",
+        "tokens": 244
+      },
+      {
+        "name": "github_merge_pr",
+        "tokens": 260
+      },
+      {
+        "name": "github_review_pr",
+        "tokens": 273
+      },
+      {
+        "name": "github_search_code",
+        "tokens": 229
+      },
+      {
+        "name": "jira_create_issue",
+        "tokens": 219
+      },
+      {
+        "name": "k8s_apply",
+        "tokens": 192
+      },
+      {
+        "name": "k8s_delete_pod",
+        "tokens": 207
+      },
+      {
+        "name": "k8s_describe_deploy",
+        "tokens": 208
+      },
+      {
+        "name": "k8s_get_pod_logs",
+        "tokens": 210
+      },
+      {
+        "name": "k8s_list_pods",
+        "tokens": 195
+      },
+      {
+        "name": "k8s_port_forward",
+        "tokens": 239
+      },
+      {
+        "name": "k8s_rollout_restart",
+        "tokens": 216
+      },
+      {
+        "name": "k8s_scale",
+        "tokens": 222
+      },
+      {
+        "name": "linear_add_comment",
+        "tokens": 209
+      },
+      {
+        "name": "linear_assign",
+        "tokens": 213
+      },
+      {
+        "name": "linear_create_issue",
+        "tokens": 235
+      },
+      {
+        "name": "linear_create_issue_from_template",
+        "tokens": 279
+      },
+      {
+        "name": "linear_create_project",
+        "tokens": 207
+      },
+      {
+        "name": "linear_list_issues",
+        "tokens": 206
+      },
+      {
+        "name": "linear_search",
+        "tokens": 189
+      },
+      {
+        "name": "linear_update_issue",
+        "tokens": 218
+      },
+      {
+        "name": "notion_append_block",
+        "tokens": 211
+      },
+      {
+        "name": "notion_create_database",
+        "tokens": 208
+      },
+      {
+        "name": "notion_create_page",
+        "tokens": 210
+      },
+      {
+        "name": "notion_query_database",
+        "tokens": 206
+      },
+      {
+        "name": "notion_search",
+        "tokens": 197
+      },
+      {
+        "name": "notion_update_page",
+        "tokens": 208
+      },
+      {
+        "name": "pagerduty_ack",
+        "tokens": 197
+      },
+      {
+        "name": "postgres_describe_table",
+        "tokens": 205
+      },
+      {
+        "name": "postgres_dump_table",
+        "tokens": 204
+      },
+      {
+        "name": "postgres_explain",
+        "tokens": 193
+      },
+      {
+        "name": "postgres_insert_row",
+        "tokens": 210
+      },
+      {
+        "name": "postgres_list_schemas",
+        "tokens": 191
+      },
+      {
+        "name": "postgres_list_tables",
+        "tokens": 188
+      },
+      {
+        "name": "postgres_query",
+        "tokens": 206
+      },
+      {
+        "name": "postgres_update_row",
+        "tokens": 227
+      },
+      {
+        "name": "sentry_get_issue",
+        "tokens": 197
+      },
+      {
+        "name": "sentry_get_release_health",
+        "tokens": 202
+      },
+      {
+        "name": "sentry_list_issues",
+        "tokens": 209
+      },
+      {
+        "name": "sentry_list_releases",
+        "tokens": 196
+      },
+      {
+        "name": "sentry_resolve_issue",
+        "tokens": 196
+      },
+      {
+        "name": "sentry_search_events",
+        "tokens": 207
+      },
+      {
+        "name": "slack_add_reaction",
+        "tokens": 230
+      },
+      {
+        "name": "slack_create_channel",
+        "tokens": 211
+      },
+      {
+        "name": "slack_invite_user",
+        "tokens": 215
+      },
+      {
+        "name": "slack_list_channels",
+        "tokens": 213
+      },
+      {
+        "name": "slack_post_message",
+        "tokens": 245
+      },
+      {
+        "name": "slack_reply_thread",
+        "tokens": 227
+      },
+      {
+        "name": "slack_search_messages",
+        "tokens": 202
+      },
+      {
+        "name": "slack_upload_file",
+        "tokens": 230
+      },
+      {
+        "name": "stripe_create_customer",
+        "tokens": 201
+      },
+      {
+        "name": "stripe_create_invoice",
+        "tokens": 250
+      },
+      {
+        "name": "stripe_create_payment_link",
+        "tokens": 230
+      },
+      {
+        "name": "stripe_create_subscription",
+        "tokens": 204
+      },
+      {
+        "name": "stripe_get_balance",
+        "tokens": 197
+      },
+      {
+        "name": "stripe_list_charges",
+        "tokens": 198
+      },
+      {
+        "name": "stripe_refund",
+        "tokens": 219
+      },
+      {
+        "name": "stripe_search_customers",
+        "tokens": 190
+      }
+    ]
+  },
+  "usage": {
+    "callCount": 37,
+    "minCount": 1,
+    "hotSet": [
+      "github_create_issue",
+      "postgres_query",
+      "slack_post_message",
+      "fs_read_file",
+      "github_list_issues",
+      "linear_create_issue",
+      "browser_navigate",
+      "calendar_create_event",
+      "notion_search",
+      "postgres_describe_table",
+      "slack_list_channels",
+      "stripe_create_invoice",
+      "stripe_refund",
+      "sentry_get_release_health"
+    ],
+    "byTool": [
+      {
+        "tool": "github_create_issue",
+        "count": 5
+      },
+      {
+        "tool": "postgres_query",
+        "count": 4
+      },
+      {
+        "tool": "slack_post_message",
+        "count": 4
+      },
+      {
+        "tool": "fs_read_file",
+        "count": 3
+      },
+      {
+        "tool": "github_list_issues",
+        "count": 3
+      },
+      {
+        "tool": "linear_create_issue",
+        "count": 3
+      },
+      {
+        "tool": "browser_navigate",
+        "count": 2
+      },
+      {
+        "tool": "calendar_create_event",
+        "count": 2
+      },
+      {
+        "tool": "notion_search",
+        "count": 2
+      },
+      {
+        "tool": "postgres_describe_table",
+        "count": 2
+      },
+      {
+        "tool": "slack_list_channels",
+        "count": 2
+      },
+      {
+        "tool": "stripe_create_invoice",
+        "count": 2
+      },
+      {
+        "tool": "stripe_refund",
+        "count": 2
+      },
+      {
+        "tool": "sentry_get_release_health",
+        "count": 1
+      }
+    ],
+    "unknownTools": []
+  },
+  "plans": {
+    "baselineSchemaTokens": 19494,
+    "subsetSchemaTokens": 3195,
+    "dropped": 76,
+    "skillTokens": 277
+  },
+  "ab": {
+    "dataset": "kitchen-sink-90",
+    "agent": {
+      "id": "scripted-lexical-v1",
+      "kind": "mock",
+      "policy": "BM25 over tool name (weight 2) and text. Baseline and subset score the full description. CLI skill scores one-line summaries of the hot set. Lazy search scores one-line summaries of the full catalog; the agent takes the top hit. Ties break toward the shorter text, then the name."
+    },
+    "realLlm": {
+      "status": "WIP",
+      "ran": false,
+      "reason": "No real LLM was called. This run only executed scripted-lexical-v1. Tool-selection and success rates below are mock pipeline results, not model measurements."
+    },
+    "tokenizer": {
+      "library": "gpt-tokenizer",
+      "encoding": "o200k_base"
+    },
+    "hotSet": [
+      "github_create_issue",
+      "postgres_query",
+      "slack_post_message",
+      "fs_read_file",
+      "github_list_issues",
+      "linear_create_issue",
+      "browser_navigate",
+      "calendar_create_event",
+      "notion_search",
+      "postgres_describe_table",
+      "slack_list_channels",
+      "stripe_create_invoice",
+      "stripe_refund",
+      "sentry_get_release_health"
+    ],
+    "arms": [
+      {
+        "arm": "baseline",
+        "toolCount": 90,
+        "schemaTokens": 19494,
+        "instructionTokens": 0,
+        "tasks": 12,
+        "selectionCorrect": 7,
+        "successes": 7,
+        "selectionAccuracy": "7/12",
+        "successRate": "7/12",
+        "resultTokensTotal": 343,
+        "meanResultTokens": 28.6,
+        "meanTotalContextTokens": 19536.9
+      },
+      {
+        "arm": "subset",
+        "toolCount": 14,
+        "schemaTokens": 3195,
+        "instructionTokens": 0,
+        "tasks": 12,
+        "selectionCorrect": 11,
+        "successes": 10,
+        "selectionAccuracy": "11/12",
+        "successRate": "10/12",
+        "resultTokensTotal": 296,
+        "meanResultTokens": 24.7,
+        "meanTotalContextTokens": 3234
+      },
+      {
+        "arm": "cli-skill",
+        "toolCount": 1,
+        "schemaTokens": 114,
+        "instructionTokens": 277,
+        "tasks": 12,
+        "selectionCorrect": 11,
+        "successes": 10,
+        "selectionAccuracy": "11/12",
+        "successRate": "10/12",
+        "resultTokensTotal": 272,
+        "meanResultTokens": 22.7,
+        "meanTotalContextTokens": 428
+      },
+      {
+        "arm": "lazy",
+        "toolCount": 2,
+        "schemaTokens": 222,
+        "instructionTokens": 0,
+        "tasks": 12,
+        "selectionCorrect": 12,
+        "successes": 11,
+        "selectionAccuracy": "12/12",
+        "successRate": "11/12",
+        "resultTokensTotal": 1771,
+        "meanResultTokens": 147.6,
+        "meanTotalContextTokens": 383.9
+      }
+    ],
+    "tasks": [
+      {
+        "taskId": "gh-create",
+        "arm": "baseline",
+        "goldTool": "github_create_issue",
+        "selectedTool": "github_create_issue_from_template",
+        "goldOnSurface": true,
+        "selectionCorrect": false,
+        "success": false,
+        "reason": "wrong-tool",
+        "schemaTokens": 19494,
+        "instructionTokens": 0,
+        "promptTokens": 23,
+        "resultTokens": 47,
+        "totalContextTokens": 19564,
+        "candidates": [
+          {
+            "name": "github_create_issue_from_template",
+            "score": 27.623589
+          },
+          {
+            "name": "github_create_issue",
+            "score": 21.769631
+          },
+          {
+            "name": "github_comment_issue",
+            "score": 16.036932
+          }
+        ],
+        "calls": [
+          {
+            "tool": "github_create_issue_from_template",
+            "ok": false
+          }
+        ]
+      },
+      {
+        "taskId": "gh-list",
+        "arm": "baseline",
+        "goldTool": "github_list_issues",
+        "selectedTool": "github_list_issues",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 19494,
+        "instructionTokens": 0,
+        "promptTokens": 12,
+        "resultTokens": 27,
+        "totalContextTokens": 19533,
+        "candidates": [
+          {
+            "name": "github_list_issues",
+            "score": 28.510766
+          },
+          {
+            "name": "linear_list_issues",
+            "score": 15.381353
+          },
+          {
+            "name": "sentry_list_issues",
+            "score": 15.381353
+          }
+        ],
+        "calls": [
+          {
+            "tool": "github_list_issues",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "gh-create-missing-args",
+        "arm": "baseline",
+        "goldTool": "github_create_issue",
+        "selectedTool": "github_create_issue_from_template",
+        "goldOnSurface": true,
+        "selectionCorrect": false,
+        "success": false,
+        "reason": "wrong-tool",
+        "schemaTokens": 19494,
+        "instructionTokens": 0,
+        "promptTokens": 10,
+        "resultTokens": 47,
+        "totalContextTokens": 19551,
+        "candidates": [
+          {
+            "name": "github_create_issue_from_template",
+            "score": 27.623589
+          },
+          {
+            "name": "github_create_issue",
+            "score": 17.670282
+          },
+          {
+            "name": "github_close_issue",
+            "score": 12.749203
+          }
+        ],
+        "calls": [
+          {
+            "tool": "github_create_issue_from_template",
+            "ok": false
+          }
+        ]
+      },
+      {
+        "taskId": "slack-post",
+        "arm": "baseline",
+        "goldTool": "slack_post_message",
+        "selectedTool": "slack_post_message",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 19494,
+        "instructionTokens": 0,
+        "promptTokens": 21,
+        "resultTokens": 30,
+        "totalContextTokens": 19545,
+        "candidates": [
+          {
+            "name": "slack_post_message",
+            "score": 35.550301
+          },
+          {
+            "name": "slack_create_channel",
+            "score": 18.251307
+          },
+          {
+            "name": "sentry_list_releases",
+            "score": 12.244778
+          }
+        ],
+        "calls": [
+          {
+            "tool": "slack_post_message",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "linear-create",
+        "arm": "baseline",
+        "goldTool": "linear_create_issue",
+        "selectedTool": "linear_create_issue_from_template",
+        "goldOnSurface": true,
+        "selectionCorrect": false,
+        "success": false,
+        "reason": "wrong-tool",
+        "schemaTokens": 19494,
+        "instructionTokens": 0,
+        "promptTokens": 14,
+        "resultTokens": 25,
+        "totalContextTokens": 19533,
+        "candidates": [
+          {
+            "name": "linear_create_issue_from_template",
+            "score": 28.142811
+          },
+          {
+            "name": "linear_create_issue",
+            "score": 22.681653
+          },
+          {
+            "name": "linear_update_issue",
+            "score": 13.333647
+          }
+        ],
+        "calls": [
+          {
+            "tool": "linear_create_issue_from_template",
+            "ok": false
+          }
+        ]
+      },
+      {
+        "taskId": "notion-search",
+        "arm": "baseline",
+        "goldTool": "notion_search",
+        "selectedTool": "notion_search",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 19494,
+        "instructionTokens": 0,
+        "promptTokens": 8,
+        "resultTokens": 19,
+        "totalContextTokens": 19521,
+        "candidates": [
+          {
+            "name": "notion_search",
+            "score": 16.743175
+          },
+          {
+            "name": "linear_search",
+            "score": 8.24298
+          },
+          {
+            "name": "fs_search",
+            "score": 8.215978
+          }
+        ],
+        "calls": [
+          {
+            "tool": "notion_search",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "stripe-invoice",
+        "arm": "baseline",
+        "goldTool": "stripe_create_invoice",
+        "selectedTool": "stripe_create_invoice",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 19494,
+        "instructionTokens": 0,
+        "promptTokens": 16,
+        "resultTokens": 29,
+        "totalContextTokens": 19539,
+        "candidates": [
+          {
+            "name": "stripe_create_invoice",
+            "score": 28.49307
+          },
+          {
+            "name": "stripe_create_customer",
+            "score": 23.970871
+          },
+          {
+            "name": "stripe_create_subscription",
+            "score": 12.209018
+          }
+        ],
+        "calls": [
+          {
+            "tool": "stripe_create_invoice",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "stripe-refund",
+        "arm": "baseline",
+        "goldTool": "stripe_refund",
+        "selectedTool": "stripe_refund",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 19494,
+        "instructionTokens": 0,
+        "promptTokens": 12,
+        "resultTokens": 24,
+        "totalContextTokens": 19530,
+        "candidates": [
+          {
+            "name": "stripe_refund",
+            "score": 26.584086
+          },
+          {
+            "name": "stripe_list_charges",
+            "score": 7.097347
+          },
+          {
+            "name": "stripe_search_customers",
+            "score": 7.097347
+          }
+        ],
+        "calls": [
+          {
+            "tool": "stripe_refund",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "calendar-create",
+        "arm": "baseline",
+        "goldTool": "calendar_create_event",
+        "selectedTool": "calendar_create_event_from_template",
+        "goldOnSurface": true,
+        "selectionCorrect": false,
+        "success": false,
+        "reason": "wrong-tool",
+        "schemaTokens": 19494,
+        "instructionTokens": 0,
+        "promptTokens": 21,
+        "resultTokens": 25,
+        "totalContextTokens": 19540,
+        "candidates": [
+          {
+            "name": "calendar_create_event_from_template",
+            "score": 31.012762
+          },
+          {
+            "name": "calendar_create_event",
+            "score": 26.173276
+          },
+          {
+            "name": "calendar_delete_event",
+            "score": 16.90172
+          }
+        ],
+        "calls": [
+          {
+            "tool": "calendar_create_event_from_template",
+            "ok": false
+          }
+        ]
+      },
+      {
+        "taskId": "sentry-health",
+        "arm": "baseline",
+        "goldTool": "sentry_get_release_health",
+        "selectedTool": "sentry_get_release_health",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 19494,
+        "instructionTokens": 0,
+        "promptTokens": 11,
+        "resultTokens": 20,
+        "totalContextTokens": 19525,
+        "candidates": [
+          {
+            "name": "sentry_get_release_health",
+            "score": 33.369664
+          },
+          {
+            "name": "linear_create_project",
+            "score": 11.15396
+          },
+          {
+            "name": "sentry_list_issues",
+            "score": 10.947674
+          }
+        ],
+        "calls": [
+          {
+            "tool": "sentry_get_release_health",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "k8s-restart",
+        "arm": "baseline",
+        "goldTool": "k8s_rollout_restart",
+        "selectedTool": "k8s_rollout_restart",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 19494,
+        "instructionTokens": 0,
+        "promptTokens": 13,
+        "resultTokens": 26,
+        "totalContextTokens": 19533,
+        "candidates": [
+          {
+            "name": "k8s_rollout_restart",
+            "score": 34.420115
+          },
+          {
+            "name": "k8s_list_pods",
+            "score": 6.103487
+          },
+          {
+            "name": "k8s_scale",
+            "score": 5.821436
+          }
+        ],
+        "calls": [
+          {
+            "tool": "k8s_rollout_restart",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "fs-read",
+        "arm": "baseline",
+        "goldTool": "fs_read_file",
+        "selectedTool": "fs_read_file_archive",
+        "goldOnSurface": true,
+        "selectionCorrect": false,
+        "success": false,
+        "reason": "wrong-tool",
+        "schemaTokens": 19494,
+        "instructionTokens": 0,
+        "promptTokens": 11,
+        "resultTokens": 24,
+        "totalContextTokens": 19529,
+        "candidates": [
+          {
+            "name": "fs_read_file_archive",
+            "score": 24.426415
+          },
+          {
+            "name": "fs_read_file",
+            "score": 21.237371
+          },
+          {
+            "name": "fs_write_file",
+            "score": 10.871084
+          }
+        ],
+        "calls": [
+          {
+            "tool": "fs_read_file_archive",
+            "ok": false
+          }
+        ]
+      },
+      {
+        "taskId": "gh-create",
+        "arm": "subset",
+        "goldTool": "github_create_issue",
+        "selectedTool": "github_create_issue",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 3195,
+        "instructionTokens": 0,
+        "promptTokens": 23,
+        "resultTokens": 33,
+        "totalContextTokens": 3251,
+        "candidates": [
+          {
+            "name": "github_create_issue",
+            "score": 16.953923
+          },
+          {
+            "name": "linear_create_issue",
+            "score": 8.72146
+          },
+          {
+            "name": "github_list_issues",
+            "score": 6.925855
+          }
+        ],
+        "calls": [
+          {
+            "tool": "github_create_issue",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "gh-list",
+        "arm": "subset",
+        "goldTool": "github_list_issues",
+        "selectedTool": "github_list_issues",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 3195,
+        "instructionTokens": 0,
+        "promptTokens": 12,
+        "resultTokens": 27,
+        "totalContextTokens": 3234,
+        "candidates": [
+          {
+            "name": "github_list_issues",
+            "score": 21.893447
+          },
+          {
+            "name": "github_create_issue",
+            "score": 7.760996
+          },
+          {
+            "name": "slack_list_channels",
+            "score": 5.358891
+          }
+        ],
+        "calls": [
+          {
+            "tool": "github_list_issues",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "gh-create-missing-args",
+        "arm": "subset",
+        "goldTool": "github_create_issue",
+        "selectedTool": "github_create_issue",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": false,
+        "reason": "missing-args",
+        "schemaTokens": 3195,
+        "instructionTokens": 0,
+        "promptTokens": 10,
+        "resultTokens": 44,
+        "totalContextTokens": 3249,
+        "candidates": [
+          {
+            "name": "github_create_issue",
+            "score": 14.286764
+          },
+          {
+            "name": "linear_create_issue",
+            "score": 8.72146
+          },
+          {
+            "name": "github_list_issues",
+            "score": 5.200023
+          }
+        ],
+        "calls": [
+          {
+            "tool": "github_create_issue",
+            "ok": false
+          }
+        ]
+      },
+      {
+        "taskId": "slack-post",
+        "arm": "subset",
+        "goldTool": "slack_post_message",
+        "selectedTool": "slack_post_message",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 3195,
+        "instructionTokens": 0,
+        "promptTokens": 21,
+        "resultTokens": 30,
+        "totalContextTokens": 3246,
+        "candidates": [
+          {
+            "name": "slack_post_message",
+            "score": 22.595039
+          },
+          {
+            "name": "slack_list_channels",
+            "score": 5.358891
+          },
+          {
+            "name": "browser_navigate",
+            "score": 0
+          }
+        ],
+        "calls": [
+          {
+            "tool": "slack_post_message",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "linear-create",
+        "arm": "subset",
+        "goldTool": "linear_create_issue",
+        "selectedTool": "linear_create_issue",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 3195,
+        "instructionTokens": 0,
+        "promptTokens": 14,
+        "resultTokens": 22,
+        "totalContextTokens": 3231,
+        "candidates": [
+          {
+            "name": "linear_create_issue",
+            "score": 18.530225
+          },
+          {
+            "name": "github_create_issue",
+            "score": 9.192928
+          },
+          {
+            "name": "calendar_create_event",
+            "score": 3.539292
+          }
+        ],
+        "calls": [
+          {
+            "tool": "linear_create_issue",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "notion-search",
+        "arm": "subset",
+        "goldTool": "notion_search",
+        "selectedTool": "notion_search",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 3195,
+        "instructionTokens": 0,
+        "promptTokens": 8,
+        "resultTokens": 19,
+        "totalContextTokens": 3222,
+        "candidates": [
+          {
+            "name": "notion_search",
+            "score": 15.065342
+          },
+          {
+            "name": "browser_navigate",
+            "score": 0
+          },
+          {
+            "name": "postgres_query",
+            "score": 0
+          }
+        ],
+        "calls": [
+          {
+            "tool": "notion_search",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "stripe-invoice",
+        "arm": "subset",
+        "goldTool": "stripe_create_invoice",
+        "selectedTool": "stripe_create_invoice",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 3195,
+        "instructionTokens": 0,
+        "promptTokens": 16,
+        "resultTokens": 29,
+        "totalContextTokens": 3240,
+        "candidates": [
+          {
+            "name": "stripe_create_invoice",
+            "score": 18.530225
+          },
+          {
+            "name": "stripe_refund",
+            "score": 5.843939
+          },
+          {
+            "name": "calendar_create_event",
+            "score": 3.539292
+          }
+        ],
+        "calls": [
+          {
+            "tool": "stripe_create_invoice",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "stripe-refund",
+        "arm": "subset",
+        "goldTool": "stripe_refund",
+        "selectedTool": "stripe_refund",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 3195,
+        "instructionTokens": 0,
+        "promptTokens": 12,
+        "resultTokens": 24,
+        "totalContextTokens": 3231,
+        "candidates": [
+          {
+            "name": "stripe_refund",
+            "score": 16.521536
+          },
+          {
+            "name": "stripe_create_invoice",
+            "score": 5.21634
+          },
+          {
+            "name": "browser_navigate",
+            "score": 0
+          }
+        ],
+        "calls": [
+          {
+            "tool": "stripe_refund",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "calendar-create",
+        "arm": "subset",
+        "goldTool": "calendar_create_event",
+        "selectedTool": "calendar_create_event",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 3195,
+        "instructionTokens": 0,
+        "promptTokens": 21,
+        "resultTokens": 28,
+        "totalContextTokens": 3244,
+        "candidates": [
+          {
+            "name": "calendar_create_event",
+            "score": 20.244577
+          },
+          {
+            "name": "linear_create_issue",
+            "score": 3.50512
+          },
+          {
+            "name": "stripe_create_invoice",
+            "score": 3.50512
+          }
+        ],
+        "calls": [
+          {
+            "tool": "calendar_create_event",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "sentry-health",
+        "arm": "subset",
+        "goldTool": "sentry_get_release_health",
+        "selectedTool": "sentry_get_release_health",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 3195,
+        "instructionTokens": 0,
+        "promptTokens": 11,
+        "resultTokens": 20,
+        "totalContextTokens": 3226,
+        "candidates": [
+          {
+            "name": "sentry_get_release_health",
+            "score": 21.894111
+          },
+          {
+            "name": "browser_navigate",
+            "score": 0
+          },
+          {
+            "name": "postgres_query",
+            "score": 0
+          }
+        ],
+        "calls": [
+          {
+            "tool": "sentry_get_release_health",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "k8s-restart",
+        "arm": "subset",
+        "goldTool": "k8s_rollout_restart",
+        "selectedTool": null,
+        "goldOnSurface": false,
+        "selectionCorrect": false,
+        "success": false,
+        "reason": "pruned",
+        "schemaTokens": 3195,
+        "instructionTokens": 0,
+        "promptTokens": 13,
+        "resultTokens": 0,
+        "totalContextTokens": 3208,
+        "candidates": [
+          {
+            "name": "browser_navigate",
+            "score": 0
+          },
+          {
+            "name": "postgres_query",
+            "score": 0
+          },
+          {
+            "name": "postgres_describe_table",
+            "score": 0
+          }
+        ],
+        "calls": []
+      },
+      {
+        "taskId": "fs-read",
+        "arm": "subset",
+        "goldTool": "fs_read_file",
+        "selectedTool": "fs_read_file",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 3195,
+        "instructionTokens": 0,
+        "promptTokens": 11,
+        "resultTokens": 20,
+        "totalContextTokens": 3226,
+        "candidates": [
+          {
+            "name": "fs_read_file",
+            "score": 15.909827
+          },
+          {
+            "name": "browser_navigate",
+            "score": 0
+          },
+          {
+            "name": "postgres_query",
+            "score": 0
+          }
+        ],
+        "calls": [
+          {
+            "tool": "fs_read_file",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "gh-create",
+        "arm": "cli-skill",
+        "goldTool": "github_create_issue",
+        "selectedTool": "github_create_issue",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 114,
+        "instructionTokens": 277,
+        "promptTokens": 23,
+        "resultTokens": 33,
+        "totalContextTokens": 447,
+        "candidates": [
+          {
+            "name": "github_create_issue",
+            "score": 15.909677
+          },
+          {
+            "name": "linear_create_issue",
+            "score": 8.826062
+          },
+          {
+            "name": "github_list_issues",
+            "score": 6.751896
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_exec",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "gh-list",
+        "arm": "cli-skill",
+        "goldTool": "github_list_issues",
+        "selectedTool": "github_list_issues",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 114,
+        "instructionTokens": 277,
+        "promptTokens": 12,
+        "resultTokens": 27,
+        "totalContextTokens": 430,
+        "candidates": [
+          {
+            "name": "github_list_issues",
+            "score": 20.541781
+          },
+          {
+            "name": "github_create_issue",
+            "score": 7.083615
+          },
+          {
+            "name": "slack_list_channels",
+            "score": 5.278903
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_exec",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "gh-create-missing-args",
+        "arm": "cli-skill",
+        "goldTool": "github_create_issue",
+        "selectedTool": "github_create_issue",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": false,
+        "reason": "missing-args",
+        "schemaTokens": 114,
+        "instructionTokens": 277,
+        "promptTokens": 10,
+        "resultTokens": 20,
+        "totalContextTokens": 421,
+        "candidates": [
+          {
+            "name": "github_create_issue",
+            "score": 14.104965
+          },
+          {
+            "name": "linear_create_issue",
+            "score": 8.826062
+          },
+          {
+            "name": "github_list_issues",
+            "score": 5.113043
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_exec",
+            "ok": false
+          }
+        ]
+      },
+      {
+        "taskId": "slack-post",
+        "arm": "cli-skill",
+        "goldTool": "slack_post_message",
+        "selectedTool": "slack_post_message",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 114,
+        "instructionTokens": 277,
+        "promptTokens": 21,
+        "resultTokens": 30,
+        "totalContextTokens": 442,
+        "candidates": [
+          {
+            "name": "slack_post_message",
+            "score": 21.165941
+          },
+          {
+            "name": "slack_list_channels",
+            "score": 5.278903
+          },
+          {
+            "name": "stripe_refund",
+            "score": 0
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_exec",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "linear-create",
+        "arm": "cli-skill",
+        "goldTool": "linear_create_issue",
+        "selectedTool": "linear_create_issue",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 114,
+        "instructionTokens": 277,
+        "promptTokens": 14,
+        "resultTokens": 22,
+        "totalContextTokens": 427,
+        "candidates": [
+          {
+            "name": "linear_create_issue",
+            "score": 17.929196
+          },
+          {
+            "name": "github_create_issue",
+            "score": 8.826062
+          },
+          {
+            "name": "stripe_create_invoice",
+            "score": 3.547159
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_exec",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "notion-search",
+        "arm": "cli-skill",
+        "goldTool": "notion_search",
+        "selectedTool": "notion_search",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 114,
+        "instructionTokens": 277,
+        "promptTokens": 8,
+        "resultTokens": 19,
+        "totalContextTokens": 418,
+        "candidates": [
+          {
+            "name": "notion_search",
+            "score": 15.05015
+          },
+          {
+            "name": "stripe_refund",
+            "score": 0
+          },
+          {
+            "name": "browser_navigate",
+            "score": 0
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_exec",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "stripe-invoice",
+        "arm": "cli-skill",
+        "goldTool": "stripe_create_invoice",
+        "selectedTool": "stripe_create_invoice",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 114,
+        "instructionTokens": 277,
+        "promptTokens": 16,
+        "resultTokens": 29,
+        "totalContextTokens": 436,
+        "candidates": [
+          {
+            "name": "stripe_create_invoice",
+            "score": 17.929196
+          },
+          {
+            "name": "stripe_refund",
+            "score": 6.058858
+          },
+          {
+            "name": "linear_create_issue",
+            "score": 3.547159
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_exec",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "stripe-refund",
+        "arm": "cli-skill",
+        "goldTool": "stripe_refund",
+        "selectedTool": "stripe_refund",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 114,
+        "instructionTokens": 277,
+        "promptTokens": 12,
+        "resultTokens": 24,
+        "totalContextTokens": 427,
+        "candidates": [
+          {
+            "name": "stripe_refund",
+            "score": 16.425456
+          },
+          {
+            "name": "stripe_create_invoice",
+            "score": 5.278903
+          },
+          {
+            "name": "browser_navigate",
+            "score": 0
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_exec",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "calendar-create",
+        "arm": "cli-skill",
+        "goldTool": "calendar_create_event",
+        "selectedTool": "calendar_create_event",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 114,
+        "instructionTokens": 277,
+        "promptTokens": 21,
+        "resultTokens": 28,
+        "totalContextTokens": 440,
+        "candidates": [
+          {
+            "name": "calendar_create_event",
+            "score": 19.434197
+          },
+          {
+            "name": "linear_create_issue",
+            "score": 3.547159
+          },
+          {
+            "name": "github_create_issue",
+            "score": 3.547159
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_exec",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "sentry-health",
+        "arm": "cli-skill",
+        "goldTool": "sentry_get_release_health",
+        "selectedTool": "sentry_get_release_health",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 114,
+        "instructionTokens": 277,
+        "promptTokens": 11,
+        "resultTokens": 20,
+        "totalContextTokens": 422,
+        "candidates": [
+          {
+            "name": "sentry_get_release_health",
+            "score": 20.149074
+          },
+          {
+            "name": "stripe_refund",
+            "score": 0
+          },
+          {
+            "name": "browser_navigate",
+            "score": 0
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_exec",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "k8s-restart",
+        "arm": "cli-skill",
+        "goldTool": "k8s_rollout_restart",
+        "selectedTool": null,
+        "goldOnSurface": false,
+        "selectionCorrect": false,
+        "success": false,
+        "reason": "pruned",
+        "schemaTokens": 114,
+        "instructionTokens": 277,
+        "promptTokens": 13,
+        "resultTokens": 0,
+        "totalContextTokens": 404,
+        "candidates": [
+          {
+            "name": "stripe_refund",
+            "score": 0
+          },
+          {
+            "name": "browser_navigate",
+            "score": 0
+          },
+          {
+            "name": "linear_create_issue",
+            "score": 0
+          }
+        ],
+        "calls": []
+      },
+      {
+        "taskId": "fs-read",
+        "arm": "cli-skill",
+        "goldTool": "fs_read_file",
+        "selectedTool": "fs_read_file",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 114,
+        "instructionTokens": 277,
+        "promptTokens": 11,
+        "resultTokens": 20,
+        "totalContextTokens": 422,
+        "candidates": [
+          {
+            "name": "fs_read_file",
+            "score": 15.887038
+          },
+          {
+            "name": "stripe_refund",
+            "score": 0
+          },
+          {
+            "name": "browser_navigate",
+            "score": 0
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_exec",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "gh-create",
+        "arm": "lazy",
+        "goldTool": "github_create_issue",
+        "selectedTool": "github_create_issue",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 222,
+        "instructionTokens": 0,
+        "promptTokens": 23,
+        "resultTokens": 163,
+        "totalContextTokens": 408,
+        "candidates": [
+          {
+            "name": "github_create_issue",
+            "score": 20.325818
+          },
+          {
+            "name": "github_comment_issue",
+            "score": 15.744985
+          },
+          {
+            "name": "github_create_issue_from_template",
+            "score": 15.56647
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_search",
+            "ok": true
+          },
+          {
+            "tool": "diet_call",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "gh-list",
+        "arm": "lazy",
+        "goldTool": "github_list_issues",
+        "selectedTool": "github_list_issues",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 222,
+        "instructionTokens": 0,
+        "promptTokens": 12,
+        "resultTokens": 157,
+        "totalContextTokens": 391,
+        "candidates": [
+          {
+            "name": "github_list_issues",
+            "score": 26.573396
+          },
+          {
+            "name": "linear_list_issues",
+            "score": 15.184483
+          },
+          {
+            "name": "sentry_list_issues",
+            "score": 15.184483
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_search",
+            "ok": true
+          },
+          {
+            "tool": "diet_call",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "gh-create-missing-args",
+        "arm": "lazy",
+        "goldTool": "github_create_issue",
+        "selectedTool": "github_create_issue",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": false,
+        "reason": "missing-args",
+        "schemaTokens": 222,
+        "instructionTokens": 0,
+        "promptTokens": 10,
+        "resultTokens": 145,
+        "totalContextTokens": 377,
+        "candidates": [
+          {
+            "name": "github_create_issue",
+            "score": 17.565399
+          },
+          {
+            "name": "github_create_issue_from_template",
+            "score": 15.56647
+          },
+          {
+            "name": "github_close_issue",
+            "score": 13.016625
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_search",
+            "ok": true
+          },
+          {
+            "tool": "diet_call",
+            "ok": false
+          }
+        ]
+      },
+      {
+        "taskId": "slack-post",
+        "arm": "lazy",
+        "goldTool": "slack_post_message",
+        "selectedTool": "slack_post_message",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 222,
+        "instructionTokens": 0,
+        "promptTokens": 21,
+        "resultTokens": 160,
+        "totalContextTokens": 403,
+        "candidates": [
+          {
+            "name": "slack_post_message",
+            "score": 33.5987
+          },
+          {
+            "name": "slack_create_channel",
+            "score": 18.598284
+          },
+          {
+            "name": "sentry_list_releases",
+            "score": 12.08287
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_search",
+            "ok": true
+          },
+          {
+            "tool": "diet_call",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "linear-create",
+        "arm": "lazy",
+        "goldTool": "linear_create_issue",
+        "selectedTool": "linear_create_issue",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 222,
+        "instructionTokens": 0,
+        "promptTokens": 14,
+        "resultTokens": 141,
+        "totalContextTokens": 377,
+        "candidates": [
+          {
+            "name": "linear_create_issue",
+            "score": 21.723355
+          },
+          {
+            "name": "linear_create_issue_from_template",
+            "score": 16.117729
+          },
+          {
+            "name": "linear_update_issue",
+            "score": 13.161859
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_search",
+            "ok": true
+          },
+          {
+            "tool": "diet_call",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "notion-search",
+        "arm": "lazy",
+        "goldTool": "notion_search",
+        "selectedTool": "notion_search",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 222,
+        "instructionTokens": 0,
+        "promptTokens": 8,
+        "resultTokens": 136,
+        "totalContextTokens": 366,
+        "candidates": [
+          {
+            "name": "notion_search",
+            "score": 16.756042
+          },
+          {
+            "name": "linear_search",
+            "score": 8.144545
+          },
+          {
+            "name": "notion_create_page",
+            "score": 8.070718
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_search",
+            "ok": true
+          },
+          {
+            "tool": "diet_call",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "stripe-invoice",
+        "arm": "lazy",
+        "goldTool": "stripe_create_invoice",
+        "selectedTool": "stripe_create_invoice",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 222,
+        "instructionTokens": 0,
+        "promptTokens": 16,
+        "resultTokens": 143,
+        "totalContextTokens": 381,
+        "candidates": [
+          {
+            "name": "stripe_create_invoice",
+            "score": 27.622012
+          },
+          {
+            "name": "stripe_create_customer",
+            "score": 24.465946
+          },
+          {
+            "name": "stripe_create_subscription",
+            "score": 12.472162
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_search",
+            "ok": true
+          },
+          {
+            "tool": "diet_call",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "stripe-refund",
+        "arm": "lazy",
+        "goldTool": "stripe_refund",
+        "selectedTool": "stripe_refund",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 222,
+        "instructionTokens": 0,
+        "promptTokens": 12,
+        "resultTokens": 133,
+        "totalContextTokens": 367,
+        "candidates": [
+          {
+            "name": "stripe_refund",
+            "score": 26.387987
+          },
+          {
+            "name": "stripe_list_charges",
+            "score": 7.250318
+          },
+          {
+            "name": "stripe_search_customers",
+            "score": 7.250318
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_search",
+            "ok": true
+          },
+          {
+            "tool": "diet_call",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "calendar-create",
+        "arm": "lazy",
+        "goldTool": "calendar_create_event",
+        "selectedTool": "calendar_create_event",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 222,
+        "instructionTokens": 0,
+        "promptTokens": 21,
+        "resultTokens": 149,
+        "totalContextTokens": 392,
+        "candidates": [
+          {
+            "name": "calendar_create_event",
+            "score": 25.178157
+          },
+          {
+            "name": "calendar_create_event_from_template",
+            "score": 19.183247
+          },
+          {
+            "name": "calendar_delete_event",
+            "score": 17.266006
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_search",
+            "ok": true
+          },
+          {
+            "tool": "diet_call",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "sentry-health",
+        "arm": "lazy",
+        "goldTool": "sentry_get_release_health",
+        "selectedTool": "sentry_get_release_health",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 222,
+        "instructionTokens": 0,
+        "promptTokens": 11,
+        "resultTokens": 146,
+        "totalContextTokens": 379,
+        "candidates": [
+          {
+            "name": "sentry_get_release_health",
+            "score": 30.98241
+          },
+          {
+            "name": "linear_create_project",
+            "score": 11.347966
+          },
+          {
+            "name": "sentry_list_issues",
+            "score": 10.725014
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_search",
+            "ok": true
+          },
+          {
+            "tool": "diet_call",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "k8s-restart",
+        "arm": "lazy",
+        "goldTool": "k8s_rollout_restart",
+        "selectedTool": "k8s_rollout_restart",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 222,
+        "instructionTokens": 0,
+        "promptTokens": 13,
+        "resultTokens": 152,
+        "totalContextTokens": 387,
+        "candidates": [
+          {
+            "name": "k8s_rollout_restart",
+            "score": 29.702973
+          },
+          {
+            "name": "k8s_list_pods",
+            "score": 6.370734
+          },
+          {
+            "name": "k8s_scale",
+            "score": 6.184629
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_search",
+            "ok": true
+          },
+          {
+            "tool": "diet_call",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "taskId": "fs-read",
+        "arm": "lazy",
+        "goldTool": "fs_read_file",
+        "selectedTool": "fs_read_file",
+        "goldOnSurface": true,
+        "selectionCorrect": true,
+        "success": true,
+        "reason": "success",
+        "schemaTokens": 222,
+        "instructionTokens": 0,
+        "promptTokens": 11,
+        "resultTokens": 146,
+        "totalContextTokens": 379,
+        "candidates": [
+          {
+            "name": "fs_read_file",
+            "score": 21.258574
+          },
+          {
+            "name": "fs_read_file_archive",
+            "score": 18.877779
+          },
+          {
+            "name": "fs_write_file",
+            "score": 10.67915
+          }
+        ],
+        "calls": [
+          {
+            "tool": "diet_search",
+            "ok": true
+          },
+          {
+            "tool": "diet_call",
+            "ok": true
+          }
+        ]
+      }
+    ]
+  },
+  "notes": [
+    "The mock server exposed 90 tools over stdio. The scanner connected with the official MCP client and counted tokens on each tools/list object.",
+    "Historical traces mark the hot set. Tools with at least one recorded call stay. The rest are dropped by the subset and CLI skill plans.",
+    "Four catalog tools repeat a rare phrase from one eval prompt inside a long description. The scripted agent scores that full text on the baseline arm.",
+    "CLI skill and lazy search score the one-line headline only. Lazy search still sees every tool. The subset and the CLI skill do not.",
+    "One task asks for a tool that never appears in the traces, so usage-based plans prune it. One task names the right tool but omits required arguments.",
+    "Real LLM runs were not executed. Selection and success rates are mock pipeline results for scripted-lexical-v1 on kitchen-sink-90.",
+    "Token counts estimate tool-definition text with o200k_base. They are not a provider invoice. Anthropic and OpenAI tokenizers differ, and this count omits system prompts other than the diet skill instructions."
+  ]
+}

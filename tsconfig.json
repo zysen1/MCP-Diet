@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "skipLibCheck": true,
+    "types": ["node"],
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+    "rootDir": "."
+  },
+  "include": ["src", "tests"]
+}

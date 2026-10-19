@@ -1,0 +1,67 @@
+{
+  "dataset": "kitchen-sink-90",
+  "tasks": [
+    {
+      "id": "hist-github",
+      "calls": [
+        { "server": "kitchen-sink", "tool": "github_create_issue" },
+        { "server": "kitchen-sink", "tool": "github_create_issue" },
+        { "server": "kitchen-sink", "tool": "github_create_issue" },
+        { "server": "kitchen-sink", "tool": "github_create_issue" },
+        { "server": "kitchen-sink", "tool": "github_create_issue" },
+        { "server": "kitchen-sink", "tool": "github_list_issues" },
+        { "server": "kitchen-sink", "tool": "github_list_issues" },
+        { "server": "kitchen-sink", "tool": "github_list_issues" }
+      ]
+    },
+    {
+      "id": "hist-slack",
+      "calls": [
+        { "server": "kitchen-sink", "tool": "slack_post_message" },
+        { "server": "kitchen-sink", "tool": "slack_post_message" },
+        { "server": "kitchen-sink", "tool": "slack_post_message" },
+        { "server": "kitchen-sink", "tool": "slack_post_message" },
+        { "server": "kitchen-sink", "tool": "slack_list_channels" },
+        { "server": "kitchen-sink", "tool": "slack_list_channels" }
+      ]
+    },
+    {
+      "id": "hist-linear-notion",
+      "calls": [
+        { "server": "kitchen-sink", "tool": "linear_create_issue" },
+        { "server": "kitchen-sink", "tool": "linear_create_issue" },
+        { "server": "kitchen-sink", "tool": "linear_create_issue" },
+        { "server": "kitchen-sink", "tool": "notion_search" },
+        { "server": "kitchen-sink", "tool": "notion_search" }
+      ]
+    },
+    {
+      "id": "hist-data",
+      "calls": [
+        { "server": "kitchen-sink", "tool": "postgres_query" },
+        { "server": "kitchen-sink", "tool": "postgres_query" },
+        { "server": "kitchen-sink", "tool": "postgres_query" },
+        { "server": "kitchen-sink", "tool": "postgres_query" },
+        { "server": "kitchen-sink", "tool": "postgres_describe_table" },
+        { "server": "kitchen-sink", "tool": "postgres_describe_table" },
+        { "server": "kitchen-sink", "tool": "stripe_create_invoice" },
+        { "server": "kitchen-sink", "tool": "stripe_create_invoice" },
+        { "server": "kitchen-sink", "tool": "stripe_refund" },
+        { "server": "kitchen-sink", "tool": "stripe_refund" }
+      ]
+    },
+    {
+      "id": "hist-ops",
+      "calls": [
+        { "server": "kitchen-sink", "tool": "calendar_create_event" },
+        { "server": "kitchen-sink", "tool": "calendar_create_event" },
+        { "server": "kitchen-sink", "tool": "sentry_get_release_health" },
+        { "server": "kitchen-sink", "tool": "fs_read_file" },
+        { "server": "kitchen-sink", "tool": "fs_read_file" },
+        { "server": "kitchen-sink", "tool": "fs_read_file" },
+        { "server": "kitchen-sink", "tool": "browser_navigate" },
+        { "server": "kitchen-sink", "tool": "browser_navigate" }
+      ]
+    }
+  ]
+}

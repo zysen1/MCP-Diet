@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "kitchen-sink": {
+      "command": "node",
+      "args": ["--import", "tsx", "src/mock-stdio.ts"]
+    }
+  }
+}
