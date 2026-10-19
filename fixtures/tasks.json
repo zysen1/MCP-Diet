@@ -1,0 +1,65 @@
+{
+  "dataset": "kitchen-sink-90",
+  "tasks": [
+    {
+      "id": "gh-create",
+      "prompt": "Create a GitHub issue titled 'flaky checkout' in the acme/shop repository and add the bug label.",
+      "goldTool": "github_create_issue"
+    },
+    {
+      "id": "gh-list",
+      "prompt": "List open GitHub issues in the acme/shop repository.",
+      "goldTool": "github_list_issues"
+    },
+    {
+      "id": "gh-create-missing-args",
+      "prompt": "Create a GitHub issue about the flaky checkout.",
+      "goldTool": "github_create_issue"
+    },
+    {
+      "id": "slack-post",
+      "prompt": "Post a Slack message to the #releases channel saying 'shop-web 1.4 is out'.",
+      "goldTool": "slack_post_message"
+    },
+    {
+      "id": "linear-create",
+      "prompt": "Create a Linear issue titled 'retry webhook' for the Payments team.",
+      "goldTool": "linear_create_issue"
+    },
+    {
+      "id": "notion-search",
+      "prompt": "Search Notion for the onboarding guide.",
+      "goldTool": "notion_search"
+    },
+    {
+      "id": "stripe-invoice",
+      "prompt": "Create a Stripe invoice for customer cus_4491 for 1200 usd.",
+      "goldTool": "stripe_create_invoice"
+    },
+    {
+      "id": "stripe-refund",
+      "prompt": "Refund Stripe charge ch_9912 for 500 usd.",
+      "goldTool": "stripe_refund"
+    },
+    {
+      "id": "calendar-create",
+      "prompt": "Create a calendar event titled 'launch sync' on the primary calendar tomorrow at 15:00 UTC.",
+      "goldTool": "calendar_create_event"
+    },
+    {
+      "id": "sentry-health",
+      "prompt": "Check Sentry release health for the shop-web project.",
+      "goldTool": "sentry_get_release_health"
+    },
+    {
+      "id": "k8s-restart",
+      "prompt": "Restart the Kubernetes rollout for deployment api-gateway in namespace prod.",
+      "goldTool": "k8s_rollout_restart"
+    },
+    {
+      "id": "fs-read",
+      "prompt": "Read the file docs/runbook.md from the filesystem.",
+      "goldTool": "fs_read_file"
+    }
+  ]
+}

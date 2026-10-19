@@ -1,0 +1,27 @@
+MCP Diet
+Copyright 2026 MCP Diet contributors
+
+This product is licensed under the Apache License, Version 2.0.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+This project depends on, and does not vendor, the following packages:
+
+- @modelcontextprotocol/server and @modelcontextprotocol/client
+  Copyright Anthropic, PBC
+  Licensed under the Apache License, Version 2.0
+  https://github.com/modelcontextprotocol/typescript-sdk
+
+- zod
+  Copyright Colin McDonnell
+  Licensed under the MIT License
+  https://github.com/colinhacks/zod
+
+- gpt-tokenizer
+  Copyright Bazyli Brzoska
+  Licensed under the MIT License
+  https://github.com/niieani/gpt-tokenizer
+
+MCP Diet does not copy source from those packages. Their licenses apply
+to the packages themselves when you install them.
